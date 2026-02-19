@@ -1,2 +1,3 @@
 # My-First-Project
 A collection of my web development practice projects.
+Auther: Jatinder Dadra
