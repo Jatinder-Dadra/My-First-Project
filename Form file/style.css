@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url('image/global.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.responsiv-form{
+    max-width: 600px;
+    width: 100%;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid currentColor;
+    padding: 20px;
+    margin: auto;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 4px 5px rgb(255, 0, 0);
+    color: rgb(220, 225, 209);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+label{
+    font-size: 1.2rem;
+    flex: 25%;
+    padding-right:10px;
+}
+
+input[type=text],select, textarea{
+    flex: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+input[type=submit]{
+    font-size: 1.3rem;
+    width: 100%;
+    background-color: #04aa6d;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #0cdd90;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input[type=text],
+  input[type=submit],
+  select, textarea {
+    flex: 100%;
+    margin-top: 0;
+  }
+}
+
+.gradient-border-box{
+    position: relative;
+    background: blue;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gradient-border-box::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        transparent,
+        #ff0000,
+        #ffea00,
+        #00ff00,
+        transparent 30%
+    );
+    animation: rotate-border 3s linear infinite;
+    z-index: -2;
+}
+
+.gradient-border-box::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #007bff;
+    background-color: rgb(232, 232, 232);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}

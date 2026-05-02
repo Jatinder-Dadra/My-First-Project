@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+}
+/* start for first project */
+.navbar-dark {
+    padding: 10px 7%;
+}
+.navbar-nav .nav-link{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+    text-decoration-color: #d9a301;
+    text-underline-offset: 8px;
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover{
+    text-decoration-line: underline;
+    color: #007bff;
+}
+
+.logo{
+    color: white !important;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: serif;
+}
+
+span{
+    font-size: 35px;
+}
+
+.btn-login{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn-signup{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-signup:hover{
+    background-color: #0d6efd;
+}
+
+
+/* cheak the mouse of the button in login and sign up */
+.form-control.bg-dark.text-light{
+    width: 250px;
+}
+
+.form-control .bg-dark.text-light:hover{
+    background-color: #0d6efd;
+    color: #fff;
+}
+/* start for heading with css and bootstrap code */
+.container{
+    height: 400px;
+    max-height: 500;
+}
+
+.btn{
+    width: 300px;
+    height: 100px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.d-flex.justify-content-center.mt-5.gap-4{
+    margin-top: 7rem !important;
+}
+
+.btn.btn-primary{
+    outline: none !important;
+    border: 1px solid #fff;
+}
+
+.container .btn-outline-light:hover{
+    background-color: #0d6efd;
+    color: #fff !important;
+    border-color: #fff;
+}
+/* stat for row and col span class */
+.flex-container{
+    min-height: 800px;
+    border: none;
+}
+
+h3{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.row{
+    width: 100%;
+}
+
+.col{
+    width: 90%;
+}
+.column{
+    width: 80%;
+    list-style: none;
+    justify-content: center;
+}
+
+.column li{
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.column li i{
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    color: #007bff ;
+}
+
+.col-btn{
+    width: 70%;
+    height: 90px;
+    text-align: center;
+    font-size: 1.7rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.col-btn:hover{
+    background-color: #014cbe;
+}
