@@ -16,22 +16,46 @@
             }
              body{
                 background-color: rgb(230, 228, 228);
-                position: absolute;
-                left: 400px;
-                top: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
             }
+
+            #a{
+                width: 97.5%;
+                height: 90%;
+            }
+            
             table tr, th{
                 background-color: rgb(49, 224, 40);
                 border: none; 
                 border-radius: 3px;
                 box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
             }
+
+            input[type="button"]{
+                    font-size: 20px;
+                    padding: 15px;
+                }
             table{
                 background-color: black;
                 border: 2px solid black;
                 border-radius: 10px;
-                width: 100px;
-                height: 150px;
+                width: 400px;
+                height: 350px;
+            }
+
+            @media (max-width: 600px) {
+                table{
+                    width: 90%;
+                    height: auto;
+                }
+                input[type="button"]{
+                    font-size: 20px;
+                    padding: 15px;
+                }
             }
         </style>
     </head>

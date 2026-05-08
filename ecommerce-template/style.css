@@ -1,0 +1,32 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.collapse .navbar-nav .nav-link{
+    text-decoration-line: none;
+    text-decoration-color: #d9a301;
+    text-underline-offset: 8px;
+}
+
+.collapse .navbar-nav .nav-link:hover{
+    text-decoration-line: underline;
+}
+
+.hero {
+  background: linear-gradient(to right, #111, #333);
+  min-height: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.btn-warning {
+  background-color: orange;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: darkorange;
+}

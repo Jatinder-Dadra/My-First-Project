@@ -31,6 +31,11 @@
     color: #fff;
     margin: 1.5rem;
 }
+
+.logo-cart{
+    font-size: 1.9rem;
+    color: #fff;
+}
 /*---Menu Section---*/
 .nav-menu{
     display: flex;
@@ -50,26 +55,6 @@
 /*---Hover Code---*/
 .nav-item .nav-link:hover{
     color: #f0a500;
-}
-/*---Mobile Responsive Code---*/
-@media screen and (max-width: 768px) {
-    .nav-container{
-        flex-direction: column;
-        height: auto;
-        padding: 15px;
-    }
-    .nav-menu{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .nav-item{
-        margin: 10px 0;
-    }
-    .logo{
-        font-size: 1.5rem;
-    }
 }
 /*---hero section---*/
 .hero-section{
@@ -118,14 +103,6 @@ p{
     height: auto;
     margin-top: 90px;
     margin-left: 50px;
-}
-@media screen and (max-width: 1024px){
-    .hero-section{
-        flex-direction: column;
-    }
-    .center-content{
-        max-width: 80%;
-    }
 }
 /*---Product section*/
 .product-section{
@@ -179,4 +156,73 @@ p{
 .filter-btn:hover, .filter-btn.active{
     background: #f0a500;
     border-color: #f0a500;
+}
+
+.menu-icon{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block !important;
+        font-size: 30px;
+    }
+    .nav-container{
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding: 15px 20px;
+    }
+    
+    .nav-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(54, 24, 1);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-menu.active{
+        display: flex !important;
+    }
+
+    .nav-item{
+        margin: 15px 0;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .side-image img{
+        max-width: 80%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .center-content{
+        max-width: 100%;
+    }
+
+    .center-content h1{
+        margin-top: 70px;
+    }
+
+    .product-header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-box{
+        width: 100%;
+    }
 }
