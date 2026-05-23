@@ -338,12 +338,27 @@
     }
 
     .box1{
-        width: auto !important;
+        width: 90% !important;
         height: auto !important;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .box-content1{
+        width: 94%;
+        height: 600px;
+    }
+    
+    .box2{
+        width: 45%;
+        height: 230px;
+    }
+
+    .box-content2{
+        width: 93%;
+        height: 500px;
     }
 
     .box1_img{
