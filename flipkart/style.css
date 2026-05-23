@@ -338,7 +338,7 @@
     }
 
     .box1{
-        width: 90% !important;
+        width: auto !important;
         height: auto !important;
         margin-bottom: 20px;
         display: flex;
@@ -346,23 +346,8 @@
         justify-content: space-between;
     }
 
-    .box-content1{
-        width: 94%;
-        height: 600px;
-    }
-    
-    .box2{
-        width: 45%;
-        height: 230px;
-    }
-
-    .box-content2{
-        width: 93%;
-        height: 500px;
-    }
-
     .box1_img{
-        width: 155px;
+        width: 150px;
         height: 150px;
     }
 
