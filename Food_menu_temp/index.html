@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <title>Food Manu</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,10 +17,8 @@
                 <a href="#" class="nav-logo">
                     <h2 class="logo-text">☕Coffee</h2>
                 </a>
-                <ul class="nav-manu">
+                <ul class="nav-menu">
                     <button id="menu-close-button" class="fas fa-times"></button>
-
-
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Home</a>
                     </li>
@@ -27,9 +27,6 @@
                     </li>
                     <li class="nav-item">
                         <a href="#menu" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#testimonials" class="nav-link">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a href="#gallery" class="nav-link">Gallery</a>
@@ -48,7 +45,7 @@
 
             <!--Hero section-->
 
-            <section class="hero-section" >
+            <section class="hero-section" id="home">
                 <div class="section-content">
                     <div class="section-details">
                         <h2 class="title">Best Coffee</h2>
@@ -61,7 +58,7 @@
                         </div>
                     </div>
                     <div class="hero-image-wrapper">
-                        <img src="image/pngegg (55).png" alt="hero" class="hero-image">
+                        <img src="image/pngegg (42).png" alt="hero" class="hero-image">
                     </div>
                 </div>
             </section>
@@ -95,12 +92,12 @@
 
             <!--manu section-->
 
-            <section class="manu-section" id="manu">
+            <section class="manu-section" id="menu">
                <h2 class="section-title">OUR MANU</h2>
                <div class="section-content">
                     <ul class="manu-list">
                         <li class="manu-item">
-                            <img src="image/pngegg (57).png" alt="Hot Beverages"
+                            <img src="image/pngegg (57).png" alt="menu"
                             class="manu-image">
                             <div class="manu-delails">
                                 <h3 class="name">Hot Beverages</h3>
@@ -130,7 +127,7 @@
                             </div>
                         </li>
                         <li class="manu-item">
-                            <img src="image/pngegg (60).png" alt="Hot Beverages"
+                            <img src="image/pngegg (43).png" alt="Hot Beverages"
                             class="manu-image">
                             <div class="manu-delails">
                                 <h3 class="name">Special Combos</h3>
@@ -165,27 +162,27 @@
 
             <!--gallery section-->
 
-            <section class="gallary-section" id="gallary">
+            <section class="gallary-section" id="gallery">
                 <h2 class="section-title">Gallery</h2>
                 <div class="section-content">
                     <ul class="gallary-list">
                         <li class="gallary-item">
-                            <img src="image/OIP (1).webp" alt="Gallary" class="Gallary-image">
+                            <img src="image/OIP (1).webp" alt="gallary" class="Gallary-image">
                         </li>
                          <li class="gallary-item">
-                            <img src="image/1032061.jpg" alt="Gallary" class="Gallary-image">
+                            <img src="image/1032061.jpg" alt="gallary" class="Gallary-image">
                         </li>
                          <li class="gallary-item">
                             <img src="image/site.jpg" alt="Gallary" class="Gallary-image">
                         </li>
                          <li class="gallary-item">
-                            <img src="image/thum.jpg" alt="Gallary" class="Gallary-image">
+                            <img src="image/thum.jpg" alt="gallary" class="Gallary-image">
                         </li>
                          <li class="gallary-item">
-                            <img src="image/thumb.jpg" alt="Gallary" class="Gallary-image">
+                            <img src="image/thumb.jpg" alt="gallary" class="Gallary-image">
                         </li>
                          <li class="gallary-item">
-                            <img src="image/coo.avif" alt="Gallary" class="Gallary-image">
+                            <img src="image/coo.avif" alt="gallary" class="Gallary-image">
                         </li>
                     </ul>
                 </div>
@@ -193,10 +190,10 @@
 
             <!--contant section-->
 
-            <section class="contact-section" id="contact">
+            <section class="contact-section" id="contant">
                 <h2 class="section-title">Contact Us</h2>
                 <div class="section-content">
-                    <ul class="contact-info-list">
+                    <ul class="contact-info-list" alt="contant">
                         <li class="contact-info">
                             <i class="fa-solid fa-location-crosshairs"></i>
                             <p>123 Campsite Avenue, Wilderness, CA 98765</p>
@@ -228,7 +225,7 @@
                     </ul>
                     <form action="#" class="contact-form">
                         <input type="text" placeholder="Your name" class="form-input" required>
-                        <input type="email" placeholder="Your email" class="form-input" required>
+                        <input type="email" placeholder="Your email id" class="form-input" required>
                         <textarea placeholder="Your message" class="form-input" required></textarea>
                         <button class="submit-button">Submit</button>
                     </form>

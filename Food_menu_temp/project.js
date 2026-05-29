@@ -1,8 +1,13 @@
-const manuOpenButton = document.querySelector("#menu-open-button");
-const manuClosenButton = document.querySelector("#menu-close-button");
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuClosenButton = document.querySelector("#menu-close-button");
+const menuList = document.querySelector(".nav-menu");
+const links = document.querySelectorAll(".nav-link")
 
-manuOpenButton.addEventListener("click", () => {
-    document.body.classList.toggle("show-mobile-manu");
+menuOpenButton.addEventListener("click", () => {
+    document.body.classList.toggle("show-mobile-menu");    
 });
 
-manuClosenButton.addEventListener("click", () => manuOpenButton.click () );
+menuCloseButton.addEventListener("click", () => menuOpenButton.click 
+());
+
+

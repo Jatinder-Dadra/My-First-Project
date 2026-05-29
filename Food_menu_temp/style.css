@@ -24,6 +24,8 @@ button{
 img{
     width: 100%;
 }
+
+/* Hero Section */
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
@@ -45,6 +47,11 @@ img{
     background: rgb(255, 132, 0);
 }
 
+.hero-image{
+    width: 70%;
+    margin-left: 150px;
+}
+
 /** navbar style **/
 header{
     position: fixed;
@@ -52,6 +59,7 @@ header{
     z-index: 5;
     background: rgb(104, 34, 1);
 }
+
 header .navbar{
     display: flex;
     padding: 20px;
@@ -59,30 +67,129 @@ header .navbar{
     gap: 300px;
     justify-content: space-evenly;
 }
-header .nav-manu{
+
+header .nav-menu{
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.navbar .nav-manu .nav-link{
+
+.navbar .nav-menu .nav-link{
     padding: 10px 18px;
     font-size: 1rem;
     color: white;
     border-radius: 40px;
     transition: 0.3s ease;
 }
-.navbar .nav-manu .nav-link:hover{
+
+.navbar .nav-menu .nav-link:hover{
     color: white;
     background: rgb(255, 132, 0);
 }
+
 .navbar .nav-logo {
     color: white;
 }
+
 .navbar .logo-text{
     font-size: 2rem;
 }
+
 .navbar :where(#menu-close-button, #menu-open-button){
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .nav-menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 200px;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 30px 30px 40px;
+        gap: 25px;
+        transition: left 0.2s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    body.show-mobile-menu .nav-menu{
+        left: 0;
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .nav-link{
+        color: #000 !important;
+        font-size: 18px;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    #menu-open-button{
+        display: block;
+        color: white;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu-close-button{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #000;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .hero-section .section-content{
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hero-section .section-details :is(.subtitle, .description) {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .hero-section .buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        max-width: 400px;
+        margin-right: 70px;
+        margin-top: 10px;
+    }
+
 }
 
 /** hero section **/
@@ -103,7 +210,7 @@ header .nav-manu{
     color: rgb(255, 132, 0);
     font-family: cursive;
     margin-left: 100px;
-    margin-top: -70px;
+    margin-top: -70;
 }
 .subtitle{
     font-size: 2rem;
@@ -150,6 +257,28 @@ header .nav-manu{
     margin-top: 70px;
 }
 
+@media screen and (max-width: 768px){
+    .hero-section{
+        min-height: 100vh;
+    }
+
+    .title{
+    font-size: 3rem;
+    color: rgb(255, 132, 0);
+    font-family: cursive;
+    }
+
+    .subtitle{
+    font-size: 2rem;
+    max-width: 80%;
+    font-weight: semibold;
+    }
+
+    .buttons{
+        width: 90%;
+        gap: 10px;
+    }
+}
 
 /** about section **/
 .about-section{
@@ -314,45 +443,4 @@ header .nav-manu{
 .contact-section .submit-button:hover{
     color: black;
     background-color: transparent;
-}
-
-@media screen and (max-width: 900px) {
-
-    .navbar :where(#menu-close-button, #menu-open-button){
-        display: block;
-        font-size: 1rem;
-    }
-    .navbar #menu-close-button{
-        position: absolute;
-        right: 30px;
-        top: 30px;
-    }
-    .navbar #menu-open-button{
-        color: white;
-    }
-    .navbar .nav-manu{
-        display: block;
-        position: fixed;
-        left: -300px;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        align-items: center;
-        padding-top: 100px;
-        transition: left 0.2s ease;
-    }
-    body.show-mibile-manu .navbar .nav-manu{
-        left: 0;
-    }
-    .navbar .nav-manu .nav-link{
-        color: black;
-        display: block;
-        margin-top: 15px;
-        font-size: 1rem;
-    }
-    
-    
 }
