@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pliant", sans-serif;
+}
+
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap-2{
+    gap: 20px;
+}
+
+.gap-3{
+    gap: 30px;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+.sizing{
+    font-size: .9rem;
+}
+
+/* SEADER STYLING */
+header{
+    background: rgb(0, 0, 93);
+}
+
+
+.navbar{
+    min-height: 10vh;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.btn{
+   display: inline-block;
+   padding: 0.9rem 2rem;
+   background: rgb(0, 0, 205);
+   border-radius: 50px;
+   font-size: 1.1rem;
+   color: #ffffff;
+   transition: .3s ease-in-out;
+}
+
+.btn:hover{
+    background: rgb(4, 4, 254);
+}
+
+a:hover{
+    color: rgb(255, 180, 42);
+    text-decoration: dashed;
+}
+
