@@ -10,9 +10,9 @@ My goal is to build a strong foundation in frontend technologies through consist
 
 ### 📂 What's Inside:
 * **E-Commerce UI:** Practice clones of sites like Amazon and Flipkart.
-* **Landing Pages:** Beautiful layouts like Coffee Shop and Food Menus.
+* **Landing Pages:** Beautiful layouts like Coffee Shop, Food Menus, and ⚜️ Flexible Website Pricing Plans.
 * **Mini Apps:** Logic-based project like Calculator and Games.
-* **Bootstrap Projects:** Mobile-friendly designs using Bootstrap components.
+* **Bootstrap Projects:** Mobile-friendly designs using Bootstrap components (e.g., Responsive 3-Card Pricing Layout).
 
 ---
 *I am focused on writing clean code and learning something new every day.
